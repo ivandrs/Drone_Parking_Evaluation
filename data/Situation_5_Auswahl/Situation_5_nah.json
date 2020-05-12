@@ -8,7 +8,7 @@
 			"Next Car": 	[
 						{
 							"Distance": 200,
-							"Closer points: "2033, 2335, 2241, 2352"
+							"Closer points": "2033, 2335, 2241, 2352"
 						}
 				
 					]
@@ -22,11 +22,11 @@
 			"Next Car": 	[
 						{
 							"Distance": 200,
-							"Closer points: "2033, 2335, 2241, 2352"
+							"Closer points": "2033, 2335, 2241, 2352"
 						},
 						{
 							"Distance": 50,
-							"Closer points: "3189, 1003, 3258, 1003"
+							"Closer points": "3189, 1003, 3258, 1003"
 						}
 				
 					]
