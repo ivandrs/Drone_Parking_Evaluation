@@ -9,3 +9,8 @@ and video recordings, which contain the geometric relationships such as distance
 and orientations between the objects involved in the traffic situation - in 
 particular the vehicles - and the infrastructure such as lane markings. 
 This data helps to evaluate the performance of driver assistance functions.
+
+Json description  
+Box = pixels X,Y  de las cuatro esquinas que rodeanlos autos (superior izq, superior  derecha, inferior izq, inferior derecha )
+line =pixels X,Y  del inicio y fin de las marcas viales
+todas las medidas están en mm
