@@ -1,0 +1,44 @@
+{
+	"Autos" :
+		[
+			{ 
+			"Box" :  "1286, 802, 2054 , 809 ,1362 ,2545 ,2033, 2566", 
+			"Distance To line": 0,
+			"Error Angle": -10,
+			"Next Car": 	[
+						{
+							"Distance": 200,
+							"Closer points: "2033, 2335, 2241, 2352"
+						}
+				
+					]
+			
+			},
+				
+			{ 
+			"Box" :  "2497, 788, 3154 , 809 ,2222 ,2490 ,2863, 2635", 
+			"Distance To line": 10,
+			"Error Angle": 20,
+			"Next Car": 	[
+						{
+							"Distance": 200,
+							"Closer points: "2033, 2335, 2241, 2352"
+						},
+						{
+							"Distance": 50,
+							"Closer points: "3189, 1003, 3258, 1003"
+						}
+				
+					]
+			
+			}
+		]
+
+	"Line" :
+		[	
+			{
+			"Length": 1000,
+			"Line": "518, 264, 4918,2697 "
+			}
+		]
+}
