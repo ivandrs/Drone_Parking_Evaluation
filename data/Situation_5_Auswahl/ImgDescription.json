@@ -1,0 +1,20 @@
+{
+	"Autos" :
+		[
+			{ 
+			"Box" :  "int, int, int , int ,int ,int ,int, int", 
+			"Sorter Distance To line": int,
+			"Error Angle": int,
+			"Distance next car": int,
+			"Distance previous car": int
+			}
+		]
+
+	"Line" :
+		[	
+			{
+			"Length": int,
+			"Line": "int  int",
+			}
+		]
+}
