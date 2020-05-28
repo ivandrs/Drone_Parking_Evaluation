@@ -131,6 +131,7 @@
 								<option id="gnu.c.compiler.option.debugging.level.561325729" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.dialect.std.421222220" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1155964760" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="/usr/local/include/opencv2"/>
 									<listOptionValue builtIn="false" value="/usr/local/include/opencv"/>
 									<listOptionValue builtIn="false" value="/usr/include/libpng12"/>
 									<listOptionValue builtIn="false" value="/usr/local/include"/>
@@ -143,6 +144,7 @@
 								<option id="gnu.cpp.compiler.option.include.paths.520286331" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="/usr/local/include"/>
 									<listOptionValue builtIn="false" value="/usr/include/libpng12"/>
+									<listOptionValue builtIn="false" value="/usr/local/include/opencv2"/>
 									<listOptionValue builtIn="false" value="/usr/local/include/opencv"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.dialect.std.2090155701" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
@@ -216,5 +218,15 @@
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
-	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/Drone_Parking_Evaluation"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/Drone_Parking_Evaluation"/>
+		</configuration>
+		<configuration configurationName="openCV">
+			<resource resourceType="PROJECT" workspacePath="/Drone_Parking_Evaluation"/>
+		</configuration>
+	</storageModule>
 </cproject>
