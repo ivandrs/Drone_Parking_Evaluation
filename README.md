@@ -1,30 +1,28 @@
 # Drone_Parking_Evaluation
 Automated driving - GUI for the visual evaluation of drone data
 
-This project is designed to evaluate automated parking functions using aereal images taken by drones, this detection software was designed to run in the Cloud, so that multiple devices can make use of it. For this purpose, an iOS App was developed to be used as GUI. 
+This project is designed to evaluate automated parking functions using aerial images taken by drones, this detection software was designed to run in the Cloud, so that multiple devices can make use of it. For this purpose, an iOS App was developed to be used as GUI. 
 
 When developing driver assistance systems and automated driving functions, drones can be used to efficiently evaluate vehicle tests. This is done by processing image and video recordings of certain test scenarios, for example in automated parking attempts. Reference data can be extracted from the image and video recordings, which contain the geometric relationships such as distances 
 and orientations between the objects involved in the traffic situation - in particular the vehicles - and the infrastructure such as lane markings. 
 
-this document is divided in the following sections
-*1. Requiriments
-*2. Comandline options
-*3. Claud Architecture 
-*4. Image Processing algorithm
-##Requiriments
+This document is divided in the following sections
+1. Requirements
+2. Command line options
+3. Cloud Architecture 
+4. Image Processing algorithm
+## Requirements
 * OpenCV
 
-##Comandline options
-* Paht (of the image without the .jpg extension)  Evaluate the image in the provided path
-e.g. ./Drone_Parking_Evaluation/openCV/Drone_Parking_Evaluation data/Situation_3_Auswahl/Situation_3_fern 
+## Command line options
+* **Path** (*of the image without the .jpg extension*)  Evaluate the image in the provided path. Linux example: ./Drone_Parking_Evaluation/openCV/Drone_Parking_Evaluation data/Situation_3_Auswahl/Situation_3_fern 
 ![run Situation_3_fern](/img/example.jpg)
-* -tune (nah/fern/mittel) open the fine tuning console for the test images
-e.g. ./Drone_Parking_Evaluation/openCV/Drone_Parking_Evaluation -tune nah
+* **-tune nah/fern/mittel** open the fine tuning console for the test images. Linux example: ./Drone_Parking_Evaluation/openCV/Drone_Parking_Evaluation -tune nah
 ![tune car detector](/img/TuneCanny.jpg)
 ![tune line detector](/img/TuneHough.jpg)
 
 
-##Claud Architecture 
+## Claud Architecture 
 The iOS allows the user to select pictures directly from their phone or to import them from a given URL. A preview box shows the picture to make sure the right one is selected. The user must add metadata in CSV format. It can be manually typed or imported from an URL as well. Manual changes of the metadata are always possible. Once the user provided an image and the metadata, the request can be sent to AWS for further processing.
 
 A sequence diagram detailing the interactions between User <-> App <-> AWS is provided.
@@ -32,7 +30,7 @@ A sequence diagram detailing the interactions between User <-> App <-> AWS is pr
 The AWS infrastructure follows a serverless pattern, making use of the API Gateway, a S3 Bucket for storing the images and metadata, a noSQL DynamoDB database for storing the requests and lambda functions for handling the interactions between the components, as well as processing the image.
 
 
-##Image Processing algorithm
+## Image Processing algorithm
 The Image Processing algorithm was develop on C++ to improve the computation time, 
 the code is divided mainly in two functions focused on  the cars and line detection. In the following paragraph is presented the overview of the followed approach.
 
